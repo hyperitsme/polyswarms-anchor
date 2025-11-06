@@ -1,0 +1,19 @@
+{
+  "name": "polyswarms-anchor",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@coral-xyz/anchor": "0.30.1",
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "anchor build",
+    "deploy": "anchor deploy -p polyswarms",
+    "init": "ts-node scripts/initMarket.ts",
+    "close": "ts-node scripts/closeMarket.ts",
+    "resolve": "ts-node scripts/resolveMarket.ts",
+    "bet": "ts-node scripts/placeBet.ts"
+  }
+}
