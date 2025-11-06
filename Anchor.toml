@@ -1,0 +1,19 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.mainnet-beta]
+polyswarms = "REPLACE_WITH_PROGRAM_ID"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet-beta"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+init = "ts-node scripts/initMarket.ts"
+close = "ts-node scripts/closeMarket.ts"
+resolve = "ts-node scripts/resolveMarket.ts"
+bet = "ts-node scripts/placeBet.ts"
