@@ -1,0 +1,3 @@
+[workspace]
+members = ["programs/polyswarms"]
+resolver = "2"
